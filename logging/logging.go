@@ -9,7 +9,7 @@ import (
   "runtime"
 )
 
-func initializeLog(logFileName string) (logFile *os.File, err error) {
+func InitializeLog(logFileName string) (logFile *os.File, err error) {
   log.SetFlags(log.LstdFlags | log.Lshortfile)
   logFile, err = os.OpenFile(getLogFilePath(logFileName),
     os.O_CREATE|os.O_APPEND|os.O_RDWR, 0666)
