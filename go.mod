@@ -1,1 +1,1 @@
-module rio/util_libs
+module github.com/riolee/go_util_libs
