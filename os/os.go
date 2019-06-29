@@ -47,9 +47,6 @@ func GetPidByName(procName string) (pid int, err error) {
     if name, err = proc.Name(); err != nil {
       continue
     }
-    if len(name) > 0 {
-      fmt.Printf("name = %v\n", name)
-    }
 
     if name == procName {
       continue
